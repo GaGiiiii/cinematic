@@ -136,7 +136,11 @@
                                 <div class="text-left">
                                     <p>Naziv: <?php echo $film['naziv']; ?></p>
                                     <p>Duzina trajanja: <?php echo $film['trajanje']; ?> minuta.</p>
+<<<<<<< HEAD
                                     <p>Žanr: <?php echo $film['zanr']; ?></p>
+=======
+                                    <p>Žanr: <?php echo $film['žanr']; ?></p>
+>>>>>>> 66f6998787385f92a9ab47089b47003e8f338cf9
                                     <p>Cena: 300 RSD</p>
                                     <p>Režiser: <?php echo $film['direktor']; ?></p>
                                     <p>Uloge: <?php echo $film['glumci']; ?></p>

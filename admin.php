@@ -299,7 +299,11 @@
                                     </div>
 
                                     <div class="form-group">
+<<<<<<< HEAD
                                         <input type="text" name="zanr" class="form-control" value="<?php echo $film['zanr']; ?>" placeholder="Unesite žanr">
+=======
+                                        <input type="text" name="zanr" class="form-control" value="<?php echo $film['žanr']; ?>" placeholder="Unesite žanr">
+>>>>>>> 66f6998787385f92a9ab47089b47003e8f338cf9
                                         <?php if(array_key_exists('zanr', $poruka)) echo $poruka['zanr']; ?>
                                     </div>
 

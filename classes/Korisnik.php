@@ -6,7 +6,11 @@
 
         public static function registruj($ime, $email, $password, $isAdmin){
             $password = md5(md5($password)); // Hashovanje sifre sa md5
+<<<<<<< HEAD
             $query = "INSERT INTO korisnik (ime, email, password, is_admin) VALUES ('$ime', '$email', '$password', '$isAdmin')";
+=======
+            $query = "INSERT INTO Korisnik (ime, email, password, is_admin) VALUES ('$ime', '$email', '$password', '$isAdmin')";
+>>>>>>> 66f6998787385f92a9ab47089b47003e8f338cf9
             $result = mysqli_query(Database::getInstance()->getConnection(), $query);
             
             if($result){ // Ukoliko je query uspesan pravimo sesiju i vracamo true
@@ -19,7 +23,11 @@
         }
 
         public static function zauzetEmail($email){
+<<<<<<< HEAD
             $query = "SELECT email FROM korisnik WHERE email = '$email'";
+=======
+            $query = "SELECT email FROM Korisnik WHERE email = '$email'";
+>>>>>>> 66f6998787385f92a9ab47089b47003e8f338cf9
             $result = mysqli_query(Database::getInstance()->getConnection(), $query);
             $korisnik = mysqli_fetch_array($result);
 
@@ -31,7 +39,11 @@
         }
 
         public static function zauzetoIme($ime){
+<<<<<<< HEAD
             $query = "SELECT ime FROM korisnik WHERE ime = '$ime'";
+=======
+            $query = "SELECT ime FROM Korisnik WHERE ime = '$ime'";
+>>>>>>> 66f6998787385f92a9ab47089b47003e8f338cf9
             $result = mysqli_query(Database::getInstance()->getConnection(), $query);
             $korisnik = mysqli_fetch_array($result);
 
@@ -44,7 +56,11 @@
 
         public static function prijavi($email, $password){
             $password = md5(md5($password));
+<<<<<<< HEAD
             $query = "SELECT id, ime, email, is_admin FROM korisnik WHERE email = '$email' AND password = '$password'";
+=======
+            $query = "SELECT id, ime, email, is_admin FROM Korisnik WHERE email = '$email' AND password = '$password'";
+>>>>>>> 66f6998787385f92a9ab47089b47003e8f338cf9
             $result = mysqli_query(Database::getInstance()->getConnection(), $query);
 
             $korisnik = mysqli_fetch_array($result);

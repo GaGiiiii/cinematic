@@ -24,7 +24,11 @@
                                         <div class="text-left">
                                             <h2><?php echo $film['naziv']; ?> (<?php echo $film['godina']; ?>)</h2>
                                             <p>Trajanje <?php echo $film['trajanje']; ?> Minuta</p>
+<<<<<<< HEAD
                                             <p>Žanr: <?php echo $film['zanr']; ?></p>
+=======
+                                            <p>Žanr: <?php echo $film['žanr']; ?></p>
+>>>>>>> 66f6998787385f92a9ab47089b47003e8f338cf9
                                             <p>Režiser: <?php echo $film['direktor']; ?></p>
                                         </div>
                                         <div class="text-right">
